@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
   def start_project
   	
   end
+  def start_preview
+		
+  end
 end
