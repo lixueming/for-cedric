@@ -24,9 +24,10 @@
 					%li.step-tab.btn{:style => "z-index: 60;"}
 						=link_to "Checklist", "#"
 			.span2
-				%button.btn.btn-large{:style => "float:right;"}
-					%i.icon-eye-open
-					Review
+				= link_to static_pages_start_preview_path do
+					%button.btn.btn-large{:style => "float:right;"}
+						%i.icon-eye-open
+						Review
 .row#third-row
 	.container
 		%h3 

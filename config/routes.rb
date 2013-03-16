@@ -1,6 +1,8 @@
 ForCedric::Application.routes.draw do
   get "static_pages/getting_started"
   get "static_pages/start_project"
+  get "static_pages/start_preview"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -51,7 +53,7 @@ ForCedric::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'static_pages#start_preview'
+  root :to => 'static_pages#start_project'
 
   # See how all your routes lay out with "rake routes"
 
