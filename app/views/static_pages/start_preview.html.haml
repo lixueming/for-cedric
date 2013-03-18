@@ -2,7 +2,7 @@
 	.container
 		.row
 			.span4
-				= link_to image_tag("mobb_logo.png", :class => "brand"), root_path
+				= link_to image_tag("mobb_logo.png", :class => "brand"), static_pages_home_page_path
 			.span2.offset6
 				%ul.nav.pull-right
 					%li
@@ -13,8 +13,8 @@
 		.row
 			.span10
 				%ul.nav-pills{:style => "margin-left: 0px;"}
-					%li.step-tab.btn.active{:style => "z-index: 100;"}
-						=link_to "Getting Started", "#"	
+					%li.step-tab.btn{:style => "z-index: 100;"}
+						=link_to "Getting Started", static_pages_getting_started_path	
 					%li.step-tab.btn{:style => "z-index: 90;"}
 						=link_to "Project Profile & Donation Rewards", "#"
 					%li.step-tab.btn{:style => "z-index: 80;"}
