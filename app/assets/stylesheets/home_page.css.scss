@@ -29,17 +29,6 @@
 	padding-bottom: 30px;
 	background-color: white;
 
-	.third-row-block {
-		.third-row-block-status{
-			.bar {
-				width: 80%;
-			}
-			margin-left: 0px;
-
-			padding: 15px 10px 0px 10px;
-			background-color: #f4f4f4;
-		}
-	}
 	h5 {
 		color: #fba206;
 	}
@@ -47,4 +36,20 @@
 		color: #8e8e8e;
 	}
 
+}
+
+
+.third-row-block {
+	h5 {
+		color: #fba206;
+	}
+	.third-row-block-status{
+		.bar {
+			width: 80%;
+		}
+		margin-left: 0px;
+
+		padding: 15px 10px 0px 10px;
+		background-color: #f4f4f4;
+	}
 }

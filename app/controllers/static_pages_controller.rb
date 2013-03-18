@@ -7,4 +7,12 @@ class StaticPagesController < ApplicationController
   def start_preview
 		
   end
+  def home_page
+  end
+  def browse
+
+  end
+  def about
+
+  end
 end
