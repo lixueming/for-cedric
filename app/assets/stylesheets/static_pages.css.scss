@@ -4,12 +4,16 @@
 
 ul.nav-pills{
 	li.step-tab{
-		border-radius: 0px 100px 100px 0px;		
-		margin-left: -16px;
+		border-radius: 9px 30px 30px 9px;		
+		margin-left: -18px;
 		position:relative;
 		a {
 			color: #333;		
-		}
+		}	
+	}
+
+	li.last-tab{
+		border-radius: 0px 7px 7px 0px;		
 	}
 
 

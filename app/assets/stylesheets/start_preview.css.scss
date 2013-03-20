@@ -49,7 +49,8 @@ hr {
 		}
 
 		#main-content {
-			margin-top: 15px;
+			margin-top: 20px;
+			padding-top: 25px;
 			#content-left {
 				margin-left: 40px;
 				p {
@@ -99,9 +100,11 @@ hr {
 					padding:15px;
 					h4 {
 						padding:10px;
-
+						padding-bottom: 0px;
+						margin-bottom: 0px;
 					}
 					p {
+						font-size: 95%;
 						padding:10px;
 					}
 				}
