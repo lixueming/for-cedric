@@ -1,0 +1,236 @@
+.row#first-row
+	.container
+		.row
+			.span4
+				= link_to image_tag("mobb_logo.png", :class => "brand"), static_pages_home_page_path
+			.span2.offset6
+				%ul.nav.pull-right
+					%li
+						%i.icon-user
+						= link_to "Lorem lpsum", '#', :style => "display:inline-block"
+.row#second-row
+	.container
+		.row
+			.span10
+				%ul.nav-pills{:style => "margin-left: 0px;"}
+					%li.step-tab.btn.selected{:style => "z-index: 100;"}
+						= link_to "Getting Started", static_pages_getting_started_path
+					%li.step-tab.btn.active{:style => "z-index: 90;"}
+						=link_to "Project Profile & Donation Rewards", "#"
+					%li.step-tab.btn{:style => "z-index: 80;"}
+						=link_to "Owner Information", static_pages_owner_info_path
+					%li.step-tab.btn{:style => "z-index: 70;"}
+						=link_to "Verify Account", static_pages_verify_account_path
+					%li.step-tab.btn.last-tab{:style => "z-index: 60;"}
+						=link_to "Checklist", static_pages_checklist_path
+			.span2
+				= link_to static_pages_start_preview_path do
+					%button.btn.btn-large{:style => "float:right;"}
+						%i.icon-eye-open
+						Review
+.row#third-row
+	.container
+		%h3 
+			%center
+				Lorem ipsum sit consecteular.
+		%p
+			%center
+				Sed ut perspiciatis unde omnis doloremque laud.
+
+.row#verify-account-fourth-row
+	.container
+		.row-fluid.content
+			.span9.left-content
+				.row-fluid.left-content-row
+					.span4
+						%h5 Image
+					.span8
+						.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
+							%center
+								%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
+								%p Lorem ipsum dolor sit amet consecteular
+							%img
+				.row-fluid.left-content-row
+					.span4
+						%h5 Title
+					.span8
+						%input{type:"text", style: "width:97%;"}
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.					
+
+				.row-fluid.left-content-row
+					.span4
+						%h5 Category
+					.span8
+						.btn-group{style: "width: 100%;"}
+							%button.btn{style: "margin-top: 5px; width: 95%;"} category1
+							%button.btn.dropdown-toggle{"data-toggle" => "dropdown", style: "margin-top: 5px;"}
+								%span.caret
+							%ul.dropdown-menu{style: "width: 95%;"} 
+								%li category1
+								%li category2
+								%li category3
+				.row-fluid.left-content-row
+					.span4
+						%h5 Short Description
+					.span8
+						%textarea{rows:"4", style: "width:97%;margin-bottom: 0px;"}
+				.row-fluid.left-content-row
+					.span4
+						%h5 Location
+					.span8
+						%input{type:"text", style: "width: 97%; margin-top:5px;"}
+				.row-fluid.left-content-row
+					.span4
+						%h5 Funding Deadline
+					.span8
+						%table.table-bordered
+							%tbody
+								%tr
+									%td.label-td{style:"width:40%;"}
+										%label.radio
+											%input{type:"radio", name: "deadlineRadios", value:"deadline1", checked: "true"} Specific Length
+									%td{style:"width: 60%;"}
+										%input{type:"text", placeholder:"1-45 days"}		
+						%table.table-bordered
+							%tbody
+								%tr
+									%td.label-td{style:"width:40%;", colspan:"2"}
+										%label.radio
+											%input{type:"radio", name: "deadlineRadios", value:"deadline2"} Specific End Date
+								
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqual. 
+						%p
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				.row-fluid.left-content-row
+					.span4
+						%h5 Goal
+					.span8
+						%input{type:"text", placeholder:"$0.00", style:"width: 97%;"}
+
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						%p
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				.row-fluid.left-content-row
+					.span4
+						%h5 Donation Reward
+					.span8
+						%table.table-bordered
+							%tbody
+								%tr
+									%td.label-td{style:"width:30%;"} Amount
+									%td{style:"width:20%;"}
+										%input{type:"text", placeholder:"$0"}
+									%td.label-td{style:"width:30%;"}
+									%td{style:"width:20%;"}
+										&nbsp;
+										%i.icon-trash
+										Delete
+								%tr
+									%td.label-td{style:"width:30%;"} Name
+									%td{style:"width:70%;", colspan:"3"}
+										%input{type:"text"}
+								%tr
+									%td.label-td{style:"width:30%;"} Description
+									%td{style:"width:70%;", colspan:"3"}
+										%input{type:"text"}
+								%tr
+									%td.label-td{style:"width:30%;"} Estimated Delivery
+									%td{style:"width:40%;", colspan:"2"}
+										%input{type:"text", placeholder:"Select a Month"}
+									%td{style:"width:30%;"}
+										%input{type:"text", placeholder:"Select Year"}
+								%tr
+									%td.label-td{style:"width:30%;"} Additional Shipping Info
+									%td{style:"width:70%;", colspan:"3"}
+										%input{type:"text"}
+								%tr
+									%td.label-td{style:"width:100%;", colspan:"4"}			
+										%center
+											%p
+												0 Backers
+												%label.checkbox{style:"margin-left: 60px; display: inline-block;"}
+													%input{type:"checkbox"}
+													Limit Number Available
+				.row-fluid.left-content-row
+					.well{style:"background-color: white; width: 95%; height: 60px; margin-bottom: 0px;"}
+						%center
+							%h5 Lorem ipsum dolor sit amet consecteular							
+						%img
+
+
+
+
+
+			.span3.right-content
+				.row-fluid
+					.thumbnail{style:"background-color: white;"}
+						= image_tag ("home_page4.png")
+						.caption
+							%a{style:"color: #fba206;"}
+								%h5{style:"color: #fba206;"} Lorem lpsum Dolor
+							%p{style:"font-style: italic;"}by: Consecteular
+							%p
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.progress{style:"margin-top: 20px; margin-bottom: 10px;"}
+								.bar{style: "width: 10%;"}
+							.row-fluid
+								.span4
+									%p 000%
+								.span4
+									%p $0,000
+								.span4
+									%p 00
+							.row-fluid
+								.span4
+									%p funded
+								.span4
+									%p pledged
+								.span4
+									%p Days to go				
+				.row-fluid
+					%label.checkbox
+						%input{type:"checkbox"}
+						%h5 Make This Project Private
+				.row-fluid				
+					%h6 Sed ut perspiciatis unde.
+					%p
+						Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				.row-fluid
+					%h6 Nemo enim ipsam voluptatem quia.
+					%p
+						Voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+				.row-fluid
+					%h6 Ut enim ad minima veniam.
+					%p
+						Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+				.row-fluid
+					%h6 Sed ut perspiciatis unde.
+					%p
+						Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				.row-fluid
+					%h6 Nemo enim ipsam voluptatem quia.
+					%p
+						Voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+				.row-fluid
+					%h6 Ut enim ad minima veniam.
+					%p
+						Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+				
+.row#fifth-row
+	.container
+		.row
+			.span1.offset5
+				%button.btn.btn-large Back
+			.span1
+				%button.btn.btn-large.btn-success Next
+			.span2.offset2{:style => "padding-top: 10px;"}
+				%a
+					%i.icon-trash
+					Delete
+			.span1{:style => "padding-top: 10px;"}
+				%a
+					= image_tag "icon-exit.png"
+					Exit

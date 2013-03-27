@@ -9,6 +9,8 @@ ForCedric::Application.routes.draw do
   get "static_pages/project_page"
   get "static_pages/verify_account"
   get "static_pages/faq"
+  get "static_pages/project_profile"
+  get "static_pages/owner_info"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
