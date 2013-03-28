@@ -83,9 +83,9 @@
 	.container
 		.row
 			.span1.offset5
-				%button.btn.btn-large.disabled Back
+				= link_to "Back", static_pages_start_project_path, class:"btn btn-large"
 			.span1
-				%button.btn.btn-large.btn-success Next			
+				= link_to "Next", static_pages_project_profile_path, class:"btn btn-large btn-success"
 			.span1.offset3{:style => "padding-top: 10px;"}
 				%a{style: "cursor: pointer"}
 					%i.icon-trash

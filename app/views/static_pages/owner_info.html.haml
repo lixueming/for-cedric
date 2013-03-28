@@ -55,11 +55,12 @@
 					.span4
 						%h5 Project Introductory Video
 					.span8
-						.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
-							%center
-								%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
-								%p Lorem ipsum dolor sit amet consecteular
-						%p
+						%a.entire-selectable
+							.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
+								%center
+									%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
+									%p Lorem ipsum dolor sit amet consecteular
+						%p{style:"margin-top: 10px;"}
 							Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 				.row-fluid.left-content-row
 					.span4
@@ -81,10 +82,11 @@
 					.span4
 						%h5 Profile Photo
 					.span8
-						.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
-							%center
-								%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
-								%p Lorem ipsum dolor sit amet consecteular
+						%a.entire-selectable
+							.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
+								%center
+									%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
+									%p Lorem ipsum dolor sit amet consecteular
 				.row-fluid.left-content-row
 					.span4
 						%h5 Name
@@ -95,8 +97,9 @@
 					.span4
 						%h5 Facebook Connect
 					.span8
-						= image_tag("facebook.png", style:"width:24px; height: 24px;")
-						%h5{style:"display: inline-block; margin-left: 10px;"} Connected to Facebook
+						%a{href:"http://facebook.com"}
+							= image_tag("facebook.png", style:"width:24px; height: 24px;")
+							%h5{style:"display: inline-block; margin-left: 10px;"} Connected to Facebook
 				.row-fluid.left-content-row
 					.span4
 						%h5 Biography
@@ -165,9 +168,9 @@
 	.container
 		.row
 			.span1.offset5
-				%button.btn.btn-large Back
+				=link_to "Back", static_pages_project_profile_path, class: "btn btn-large"
 			.span1
-				%button.btn.btn-large.btn-success Next
+				= link_to "Next", static_pages_verify_account_path, class: " btn btn-large btn-success"
 			.span2.offset2{:style => "padding-top: 10px;"}
 				%a
 					%i.icon-trash

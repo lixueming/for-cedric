@@ -45,11 +45,12 @@
 					.span4
 						%h5 Image
 					.span8
-						.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
-							%center
-								%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
-								%p Lorem ipsum dolor sit amet consecteular
-							%img
+						%a.entire-selectable
+							.well{style:"background-color: white; width: 93%; height: 70px; margin-bottom: 0px;"}
+								%center
+									%h5{style:"color: #fba206;"} Lorem ipsum dolor sit amet consecteular
+									%p Lorem ipsum dolor sit amet consecteular
+								%img
 				.row-fluid.left-content-row
 					.span4
 						%h5 Title
@@ -124,10 +125,10 @@
 									%td{style:"width:20%;"}
 										%input{type:"text", placeholder:"$0"}
 									%td.label-td{style:"width:30%;"}
-									%td{style:"width:20%;"}
-										&nbsp;
-										%i.icon-trash
-										Delete
+									%td{style:"width:20%; padding-left: 10px;"}
+										%a
+											%i.icon-trash
+											Delete
 								%tr
 									%td.label-td{style:"width:30%;"} Name
 									%td{style:"width:70%;", colspan:"3"}
@@ -155,10 +156,11 @@
 													%input{type:"checkbox"}
 													Limit Number Available
 				.row-fluid.left-content-row
-					.well{style:"background-color: white; width: 95%; height: 60px; margin-bottom: 0px;"}
-						%center
-							%h5 Lorem ipsum dolor sit amet consecteular							
-						%img
+					%a.entire-selectable
+						.well{style:"background-color: white; width: 95%; height: 60px; margin-bottom: 0px;"}
+							%center
+								%h5 Lorem ipsum dolor sit amet consecteular							
+							%img
 
 
 
@@ -223,9 +225,9 @@
 	.container
 		.row
 			.span1.offset5
-				%button.btn.btn-large Back
+				= link_to "Back", static_pages_getting_started_path, class: "btn btn-large"
 			.span1
-				%button.btn.btn-large.btn-success Next
+				= link_to "Next", static_pages_owner_info_path, class: "btn btn-large btn-success"
 			.span2.offset2{:style => "padding-top: 10px;"}
 				%a
 					%i.icon-trash
