@@ -19,10 +19,10 @@
 						=link_to "Project Profile & Donation Rewards", "#"
 					%li.step-tab.btn{:style => "z-index: 80;"}
 						=link_to "Owner Information", static_pages_owner_info_path
-					%li.step-tab.btn.disabled{:style => "z-index: 70;"}
-						=link_to "Verify Account", "#"
-					%li.step-tab.btn.last-tab.disabled{:style => "z-index: 60;"}
-						=link_to "Checklist", "#"
+					%li.step-tab.btn{:style => "z-index: 70;"}
+						=link_to "Verify Account", static_pages_verify_account_path
+					%li.step-tab.btn.last-tab{:style => "z-index: 60;"}
+						=link_to "Checklist", static_pages_checklist_path
 			.span2
 				= link_to static_pages_start_preview_path do
 					%button.btn.btn-large{:style => "float:right;"}
