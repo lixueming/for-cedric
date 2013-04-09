@@ -17,13 +17,14 @@
 						%form
 							= link_to "Log in", static_pages_login_path, class: "btn btn-small btn-success"
 							= link_to " Sign up", static_pages_login_path, class: "btn btn-small btn-primary"
+
 				.row-fluid
 					.span12
 						%form.form-search
 							%input.input-medium.search-query{type: "text",placeholder: "To search type..."}
 							%i.icon-search
 
-.row#profile-page-second-row
+.row#profile-page-second-row{style:"padding-bottom: 10px;"}
 	.container
 		.row-fluid
 			.span2
@@ -32,75 +33,82 @@
 				%h4 Lorem Ipsume
 				%h5 City, State
 				%h5 Country
-.row#profile-page-third-row
+
+.row#profile-settings-third-row
 	.container
 		.row-fluid
-			.tabbable
-				%ul.nav.nav-tabs
-					%li.active
-						= link_to "Profile/Settings", "#tab1", "data-toggle"=>"tab"
-					%li
-						= link_to "Campaigns", "#tab2", "data-toggle"=>"tab"
-					%li
-						= link_to "Campaign Donations", "#tab3", "data-toggle"=>"tab"
-					%li
-						= link_to "Personal Donations", "#tab4", "data-toggle"=>"tab"
+			%h4 Profile
+			%hr.hr-row
+		.row-fluid{style:"margin-top: 30px;"}
+			.span2
+				%span Name
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Profile Picture
+			.span1
+				.well
+			.span3
+				%input{type:"file"}
+				%p{style:"font-size: 90%;"} We Support Jpg, Png, Gif, Eps, Ai.
+		.row-fluid
+			.span2
+				%span Name
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Location
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Personal URL
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Tagline
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Email Address
+			.span4
+				%input{type:"text"}
+		.row-fluid
+			.span2
+				%span Password
+			.span4
+				%input{type:"text"}			
+		.row-fluid
+			%button.btn.btn-large.btn-success Update
+.row#profile-settings-fourth-row
+	.container
+		.row-fluid{style:"margin-top: 50px;"}
+			%h4 Notifications
+			%hr.hr-row
+		.row-fluid
+			.span2
+				%span Newsletter
+			.span6
+				%p
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq uip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volu ptate velit esse cillum dolore eu fugiat nulla pariatur.
+			.span3.offset1
+				%center
+					%button.btn.btn-large.btn-success Sign Up
+		.row-fluid
+			.span2
+				%span Delete Account
+			.span6
+				%p
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+			.span3.offset1
+				%center
+					%button.btn.btn-large.btn-success Delete My Account
 
-				.tab-content
-					.tab-pane.active{id: "tab1"}
-						
-						%ul.thumbnails
-							%li.span2{style: "margin-left: 0px;"}
-								.thumbnail
-									%h3 0
-									.caption
-										%h5 Campaigns
-										%p
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore.
-							%li.span2
-								.thumbnail
-									%h3 0
-									.caption
-										%h5 Campaigns Contributions
-										%p
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							%li.span2
-								.thumbnail
-									%h3 0
-									.caption
-										%h5 Referrals
-										%p
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore.
-							%li.span2
-								.thumbnail
-									%h3 0
-									.caption
-										%h5 Donations Made
-										%p
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-										%p
-											Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-							%li.span2
-								.thumbnail
-									%h3 0
-									.caption
-										%h5 Comments
-										%p
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					= link_to "Settings", static_pages_profile_settings_path, class: "btn btn-success btn-large"
-
-					.tab-pane{id: "tab2"}
-						%p Howdy, I'm in Campaigns.
-					.tab-pane{id: "tab3"}
-						%p Howdy, I'm in Campaigns Donations.
-					.tab-pane{id: "tab4"}
-						%p Howdy, I'm in Personal Donations.
-
-
-
-
-
-			
+				
 .row#start-project-fourth-row
 	.container
 		.row
