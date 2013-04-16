@@ -61,13 +61,17 @@
 
 			.span3.right-content
 				.row-fluid
-					.span12.third-row-block
-						= image_tag ("home_page4.png")
-						%a
-							%h5 Lorem lpsum Dolor
-						%p{style:"font-style: italic;"}by: Consecteular
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					%ul.thumbnails.individual-project
+						%li.span12
+							.thumbnail
+								.heading
+									= image_tag ("home_page4.png")
+									.caption
+										%a
+											%h5 Lorem lpsum Dolor
+										%p.by by: Consecteular
+										%p.description
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 				
 .row#fifth-row

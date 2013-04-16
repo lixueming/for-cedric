@@ -37,79 +37,36 @@
 						%h4 Staff Picks
 					.span6
 						= link_to "Browse all Staff Picks", "#", class:"pull-right"
-				.row-fluid.row-three-block
-					.span4.third-row-block
-						= image_tag ("home_page4.png")
-						%a
-							%h5 Lorem lpsum Dolor
-						%p{style:"font-style: italic;"}by: Consecteular
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.row.third-row-block-status
-							.progress
-								.bar
-							.row-fluid
-								.span4
-									%p 000%
-								.span4
-									%p $0,000
-								.span4
-									%p 00
-							.row-fluid
-								.span4
-									%p funded
-								.span4
-									%p pledged
-								.span4
-									%p Days to go				
-					.span4.third-row-block
-						= image_tag ("home_page4.png")
-						%a
-							%h5 Lorem lpsum Dolor
-						%p{style:"font-style: italic;"}by: Consecteular
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.row.third-row-block-status
-							.progress
-								.bar
-							.row-fluid
-								.span4
-									%p 000%
-								.span4
-									%p $0,000
-								.span4
-									%p 00
-							.row-fluid
-								.span4
-									%p funded
-								.span4
-									%p pledged
-								.span4
-									%p Days to go				
-					.span4.third-row-block
-						= image_tag ("home_page4.png")
-						%a
-							%h5 Lorem lpsum Dolor
-						%p{style:"font-style: italic;"}by: Consecteular
-						%p
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						.row.third-row-block-status
-							.progress
-								.bar
-							.row-fluid
-								.span4
-									%p 000%
-								.span4
-									%p $0,000
-								.span4
-									%p 00
-							.row-fluid
-								.span4
-									%p funded
-								.span4
-									%p pledged
-								.span4
-									%p Days to go				
+				.row-fluid
+					%ul.thumbnails.individual-project
+						- for projects in 1...4
+							%li.span4
+								.thumbnail
+									.heading
+										= image_tag ("home_page4.png")
+										.caption
+											%a
+												%h5 Lorem lpsum Dolor
+											%p.by by: Consecteular
+											%p.description
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.footer
+										.progress
+											.bar
+										.row-fluid
+											.span4
+												%p 000%
+											.span4
+												%p $0,000
+											.span4
+												%p 00
+										.row-fluid
+											.span4
+												%p funded
+											.span4
+												%p pledged
+											.span4
+												%p Days to go
 
 				.row-fluid.row-three-block
 					.row-fluid.block-title
@@ -117,79 +74,36 @@
 							%h4 Popular This Week
 						.span6
 							= link_to "Browse all Popular This Week", "#", class:"pull-right"
-					.row-fluid.row-three-block
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
+					.row-fluid
+						%ul.thumbnails.individual-project
+							- for projects in 1...4
+								%li.span4
+									.thumbnail
+										.heading
+											= image_tag ("home_page4.png")
+											.caption
+												%a
+													%h5 Lorem lpsum Dolor
+												%p.by by: Consecteular
+												%p.description
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										.footer
+											.progress
+												.bar
+											.row-fluid
+												.span4
+													%p 000%
+												.span4
+													%p $0,000
+												.span4
+													%p 00
+											.row-fluid
+												.span4
+													%p funded
+												.span4
+													%p pledged
+												.span4
+													%p Days to go
 
 				.row-fluid.row-three-block
 					.row-fluid.block-title
@@ -197,79 +111,37 @@
 							%h4 Recently Successfully Funded
 						.span6
 							= link_to "Browse all Staff Picks", "#", class:"pull-right"
-					.row-fluid.row-three-block
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
-						.span4.third-row-block
-							= image_tag ("home_page4.png")
-							%a
-								%h5 Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.row.third-row-block-status
-								.progress
-									.bar
-								.row-fluid
-									.span4
-										%p 000%
-									.span4
-										%p $0,000
-									.span4
-										%p 00
-								.row-fluid
-									.span4
-										%p funded
-									.span4
-										%p pledged
-									.span4
-										%p Days to go				
+					.row-fluid
+						%ul.thumbnails.individual-project
+							- for projects in 1...4
+								%li.span4
+									.thumbnail
+										.heading
+											= image_tag ("home_page4.png")
+											.caption
+												%a
+													%h5 Lorem lpsum Dolor
+												%p.by by: Consecteular
+												%p.description
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										.footer
+											.progress
+												.bar
+											.row-fluid
+												.span4
+													%p 000%
+												.span4
+													%p $0,000
+												.span4
+													%p 00
+											.row-fluid
+												.span4
+													%p funded
+												.span4
+													%p pledged
+												.span4
+													%p Days to go
+
 				.row-fluid.row-recent-updates
 					.row-fluid.block-title
 						.span6

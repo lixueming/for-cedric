@@ -38,19 +38,39 @@
 
 }
 
+.third-row-block{
+	
+}
 
-.third-row-block {
-	a, h5 {
-		color: #fba206;
-	}
+ul.thumbnails.individual-project {
+	li {
+		background-color: #f2f2f2;
+		.thumbnail {
+			.heading{
+				padding: 5px;
+				background-color: #fff;
+				img {
+					width: 100%;
+				}
+				a, h5 {
+					color: #fba206;
+				}
+				p.by {
+					font-style: italic;
+				}
+				p.description {
+					font-size: 85%;
+				}
 
-	.third-row-block-status{
-		.bar {
-			width: 80%;
+			}
+			.footer{
+				.bar {
+					width: 80%;
+				}
+				margin-left: 0px;
+
+				padding: 15px 10px 0px 10px;
+			}		
 		}
-		margin-left: 0px;
-
-		padding: 15px 10px 0px 10px;
-		background-color: #f4f4f4;
 	}
 }

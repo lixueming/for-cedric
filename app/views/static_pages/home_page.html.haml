@@ -68,104 +68,36 @@
 				= link_to "Most Popular", static_pages_browse_path, class:"btn btn-warning btn-large pull-right"
 					
 
-		.row{style: "margin-top: 30px;"}
-			.span3.third-row-block
-				= image_tag ("home_page4.png")
-				%a
-					%h5 Lorem lpsum Dolor
-				%p{style:"font-style: italic;"}by: Consecteular
-				%p
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.row.third-row-block-status
-					.progress
-						.bar
-					.row-fluid
-						.span4
-							%p 000%
-						.span4
-							%p $0,000
-						.span4
-							%p 00
-					.row-fluid
-						.span4
-							%p funded
-						.span4
-							%p pledged
-						.span4
-							%p Days to go
-			.span3.third-row-block
-				= image_tag ("home_page4.png")
-				%a
-					%h5 Lorem lpsum Dolor
-				%p{style:"font-style: italic;"}by: Consecteular
-				%p
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.row.third-row-block-status
-					.progress
-						.bar
-					.row-fluid
-						.span4
-							%p 000%
-						.span4
-							%p $0,000
-						.span4
-							%p 00
-					.row-fluid
-						.span4
-							%p funded
-						.span4
-							%p pledged
-						.span4
-							%p Days to go
-			.span3.third-row-block
-				= image_tag ("home_page4.png")
-				%a
-					%h5 Lorem lpsum Dolor
-				%p{style:"font-style: italic;"}by: Consecteular
-				%p
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.row.third-row-block-status
-					.progress
-						.bar
-					.row-fluid
-						.span4
-							%p 000%
-						.span4
-							%p $0,000
-						.span4
-							%p 00
-					.row-fluid
-						.span4
-							%p funded
-						.span4
-							%p pledged
-						.span4
-							%p Days to go
-			.span3.third-row-block
-				= image_tag ("home_page4.png")
-				%a
-					%h5 Lorem lpsum Dolor
-				%p{style:"font-style: italic;"}by: Consecteular
-				%p
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.row.third-row-block-status
-					.progress
-						.bar
-					.row-fluid
-						.span4
-							%p 000%
-						.span4
-							%p $0,000
-						.span4
-							%p 00
-					.row-fluid
-						.span4
-							%p funded
-						.span4
-							%p pledged
-						.span4
-							%p Days to go
-
+		.row-fluid{style: "margin-top: 30px;"}
+			%ul.thumbnails.individual-project
+				- for projects in 1...5
+					%li.span3
+						.thumbnail
+							.heading
+								= image_tag ("home_page4.png")
+								.caption
+									%a
+										%h5 Lorem lpsum Dolor
+									%p.by by: Consecteular
+									%p.description
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.footer
+								.progress
+									.bar
+								.row-fluid
+									.span4
+										%p 000%
+									.span4
+										%p $0,000
+									.span4
+										%p 00
+								.row-fluid
+									.span4
+										%p funded
+									.span4
+										%p pledged
+									.span4
+										%p Days to go
 .row#start-project-fourth-row
 	.container
 		.row

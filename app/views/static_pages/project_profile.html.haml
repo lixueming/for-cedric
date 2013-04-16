@@ -168,30 +168,36 @@
 
 			.span3.right-content
 				.row-fluid
-					.thumbnail{style:"background-color: white;"}
-						= image_tag ("home_page4.png")
-						.caption
-							%a{style:"color: #fba206;"}
-								%h5{style:"color: #fba206;"} Lorem lpsum Dolor
-							%p{style:"font-style: italic;"}by: Consecteular
-							%p
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							.progress{style:"margin-top: 20px; margin-bottom: 10px;"}
-								.bar{style: "width: 10%;"}
-							.row-fluid
-								.span4
-									%p 000%
-								.span4
-									%p $0,000
-								.span4
-									%p 00
-							.row-fluid
-								.span4
-									%p funded
-								.span4
-									%p pledged
-								.span4
-									%p Days to go				
+					%ul.thumbnails.individual-project
+						%li.span12
+							.thumbnail
+								.heading
+									= image_tag ("home_page4.png")
+									.caption
+										%a
+											%h5 Lorem lpsum Dolor
+										%p.by by: Consecteular
+										%p.description
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.footer
+									.progress
+										.bar
+									.row-fluid
+										.span4
+											%p 000%
+										.span4
+											%p $0,000
+										.span4
+											%p 00
+									.row-fluid
+										.span4
+											%p funded
+										.span4
+											%p pledged
+										.span4
+											%p Days to go
+
+		
 				.row-fluid
 					%label.checkbox
 						%input{type:"checkbox"}
